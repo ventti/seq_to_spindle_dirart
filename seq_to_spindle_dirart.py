@@ -9,11 +9,12 @@ try:
 		data = data[1:]
 except:
 	print(f"usage: {sys.argv[0]} filename.seq [linelen=16]")
+	sys.exit(1)
+
 try:
 	linelen = int(sys.argv[2])
 except:
 	linelen = 16  # dir art
-
 
 i = 0
 while i < len(data):
